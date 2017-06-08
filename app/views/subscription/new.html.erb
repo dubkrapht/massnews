@@ -1,0 +1,7 @@
+<h3>Subscribe to newsletter</h3>
+
+<%= form_for @subscription, url: subscribe_create_path do |f| %>
+	<%= f.label "Enter Email" %>
+	<%= f.text_field :email %>
+	<%= f.submit "Submit" %>
+<% end %>
