@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   post "subscription/create", :as => "subscribe_create"
 
   get "newsletter/index", :as => "newsletter"
-  post "newsletter/send", :as => "newsletter_send"
+  post "newsletter/sendNewsletter", :as => "newsletter_send"
 end

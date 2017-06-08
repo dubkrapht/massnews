@@ -8,7 +8,9 @@ class NewsletterController < ApplicationController
 	end
 
 	def sendNewsletter
+		@newsletter = Newsletter.first #replace this with an id afterwards
 		@newsletter.deliver
-		redirect_to newsletter_index_path, notice: "Delivered"
+		flash[:notice] = "Delivered"
+		redirect_to newsletter_path
 	end
 end
