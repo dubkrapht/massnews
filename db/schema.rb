@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 20170608222941) do
 
   create_table "newsletters", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string "body"
+    t.datetime "delivered_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

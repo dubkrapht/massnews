@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   get "subscription/new", :as => "new_subscribe"
   post "subscription/create", :as => "subscribe_create"
+
+  get "newsletter/index", :as => "newsletter"
+  post "newsletter/send", :as => "newsletter_send"
 end
